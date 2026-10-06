@@ -467,36 +467,11 @@ button {
   opacity: 0.88;
 }
 
-/* banded spine */
-.spine-art--s2 {
-  background: linear-gradient(
-    var(--spine-ink) 0 5%,
-    var(--spine-accent) 5% 8%,
-    var(--spine-ink) 8% 92%,
-    var(--spine-accent) 92% 95%,
-    var(--spine-ink) 95%
-  );
-}
-
 /* paper title label */
-.spine-art--s3 .spine-title {
+.spine-art--label .spine-title {
   padding: 7px 3px;
   background: var(--paper);
   color: var(--black);
-}
-
-/* coloured cap */
-.spine-cap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 13%;
-  background: var(--spine-accent);
-}
-
-.spine-art--s4 {
-  padding-top: 19%;
 }
 
 .slip {
@@ -577,6 +552,13 @@ button {
   transform: translateX(calc(var(--n) * -5px + 14px));
 }
 
+/* each offset book is its own stacking context; lift the whole layer so the
+   hovered book and its slip clear the books and the Add slot above it */
+.stack > li:hover,
+.stack > li:focus-within {
+  z-index: 3;
+}
+
 .book--flat {
   width: calc(var(--shelf-h) * var(--h) * 0.86);
   height: calc(var(--shelf-h) * var(--w) * 0.9);
@@ -606,26 +588,6 @@ button {
 
 .spine-art--flat .spine-author {
   max-width: 24%;
-}
-
-.spine-art--flat .spine-cap {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: auto;
-  width: 10%;
-  height: auto;
-}
-
-.spine-art--flat.spine-art--s2 {
-  background: linear-gradient(
-    90deg,
-    var(--spine-ink) 0 4%,
-    var(--spine-accent) 4% 6%,
-    var(--spine-ink) 6% 94%,
-    var(--spine-accent) 94% 96%,
-    var(--spine-ink) 96%
-  );
 }
 
 .empty-shelf {
@@ -834,9 +796,59 @@ button {
   line-height: 1.3;
 }
 
+/* the cover tipped in beside the colophon */
+.fm-plate-row {
+  display: grid;
+  grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+  align-items: end;
+  gap: 22px;
+  margin: 0 0 1.6em;
+}
+
+.fm-plate {
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: var(--spine-ink);
+  color: var(--spine-text);
+  transform: rotate(-1.5deg);
+  box-shadow: 0 14px 26px -12px rgb(0 0 0 / 0.55);
+}
+
+.fm-plate-type {
+  position: absolute;
+  inset: 0;
+  padding: 12% 10%;
+  font-family: var(--display);
+  font-weight: 800;
+  font-stretch: 110%;
+  font-size: 9.5cqi;
+  line-height: 1;
+  overflow-wrap: break-word;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.fm-plate img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 240ms;
+}
+
+.fm-plate img[data-loaded] {
+  opacity: 1;
+}
+
 /* a printer's colophon: ruled rows, label left, figure right */
 .fm-colophon {
-  margin: 0 0 1.6em;
+  margin: 0;
   border-bottom: 1.5px solid color-mix(in srgb, currentColor 45%, transparent);
 }
 
@@ -850,6 +862,7 @@ button {
 }
 
 .fm-colophon dt {
+  white-space: nowrap;
   font-family: var(--display);
   font-weight: 600;
   font-size: 12px;
@@ -862,14 +875,7 @@ button {
   line-height: 1.3;
   font-variant-numeric: tabular-nums lining-nums;
   text-align: right;
-  overflow-wrap: anywhere;
-}
-
-.fm-description p {
-  max-width: 62ch;
-  margin: 0 0 0.9em;
-  font-size: 15.5px;
-  line-height: 1.6;
+  text-wrap: balance;
 }
 
 .fm-preview {
@@ -1013,6 +1019,44 @@ button {
 .own-notes--empty {
   font-style: italic;
   color: #5c5557;
+}
+
+.own-notes + .own-section {
+  margin-top: 2em;
+}
+
+/* the publisher's account and the author's other books, set quieter than the reader's own words */
+.own-section {
+  max-width: 60ch;
+}
+
+.own-section + .own-section {
+  margin-top: 1.8em;
+}
+
+.own-section h3 {
+  margin: 0 0 0.55em;
+  font-family: var(--display);
+  font-weight: 700;
+  font-stretch: 110%;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--stamp-ink);
+}
+
+.own-section p {
+  margin: 0 0 0.85em;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.own-also {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.5;
 }
 
 .own-notes--empty::first-letter {
@@ -1908,6 +1952,11 @@ button {
   border-bottom: 1.5px solid currentColor;
 }
 
+.is-narrow .fm-plate-row {
+  grid-template-columns: minmax(0, 34%) minmax(0, 1fr);
+  gap: 16px;
+}
+
 .is-narrow .own-notes--empty {
   color: inherit;
 }
@@ -2233,24 +2282,7 @@ button {
   mix-blend-mode: normal;
 }
 
-/* the cover as a one-ink print, tucked in at the foot of the reader's page */
+/* the reader's page fills the page so its actions sit at the foot */
 .own {
   flex: 1;
-}
-
-.own-print {
-  display: block;
-  width: 38%;
-  max-width: 160px;
-  aspect-ratio: 2 / 3;
-  margin: auto 0 0;
-  background: var(--stamp-ink);
-  transform: rotate(-2.5deg) translateY(10px);
-  box-shadow: 0 10px 18px -10px rgb(0 0 0 / 0.45);
-  opacity: 0;
-  transition: opacity 400ms;
-}
-
-.own-print[data-ready] {
-  opacity: 1;
 }

@@ -4,11 +4,12 @@ import { INKS, contrast, hexToRgb, inkOn, type RGB } from '../lib/inks'
 import { motifTile } from '../lib/motifs'
 import type { Genre } from '../scene/genres'
 import { SpineArt } from '../shelf/Spine'
-import { CoverPrint } from './CoverPrint'
 import type { Book, Status } from '../types'
 
 interface Props {
   book: Book
+  /** every book on the shelf, to find the author's other books */
+  library: Book[]
   origin: HTMLElement
   genre: Genre
   reducedMotion: boolean
@@ -50,7 +51,7 @@ const EASE_OUT = [0.16, 1, 0.3, 1] as const
 const EASE_IN_OUT = [0.65, 0, 0.35, 1] as const
 const dateFmt = new Intl.DateTimeFormat('en', { month: 'long', year: 'numeric' })
 
-export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit, onStatus }: Props) {
+export function BookSpread({ book, library, origin, genre, reducedMotion, onClose, onEdit, onStatus }: Props) {
   const layer = useRef<HTMLDivElement>(null)
   const book3d = useRef<HTMLDivElement>(null)
   const cover = useRef<HTMLDivElement>(null)
@@ -171,11 +172,13 @@ export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit
   }
 
   const facts: [string, string | number | undefined][] = [
-    ['First published', book.year],
-    ['Pages', book.pages],
-    ['Publisher', book.publisher],
-    ['ISBN', book.isbn],
+    ['First published', book.year || undefined],
+    ['Length', book.pages ? `${book.pages} pages` : undefined],
+    ['Reading time', book.pages ? readingTime(book.pages) : undefined],
+    ['Shelved in', genre.name],
   ]
+  const author = book.authors[0]
+  const alsoBy = author ? library.filter((b) => b.id !== book.id && b.authors.includes(author)) : []
   const description = trimDescription(book.description ?? '', 720).split(/\n{2,}/).filter(Boolean)
   const previewLabel = book.previewLink?.includes('openlibrary.org') ? 'Read it free on Open Library' : 'Read a sample on Google Books'
   const finished = book.finished ? dateFmt.format(new Date(`${book.finished}-15`)) : null
@@ -213,16 +216,19 @@ export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit
         {book.title}
       </h2>
       <p className="fm-byline">{book.authors.join(' and ')}</p>
-      <dl className="fm-colophon">
-        {facts
-          .filter(([, v]) => v !== undefined && v !== '')
-          .map(([k, v]) => (
-            <div key={k}>
-              <dt>{k}</dt>
-              <dd>{v}</dd>
-            </div>
-          ))}
-      </dl>
+      <div className="fm-plate-row">
+        <CoverPlate book={book} />
+        <dl className="fm-colophon">
+          {facts
+            .filter(([, v]) => v !== undefined && v !== '')
+            .map(([k, v]) => (
+              <div key={k}>
+                <dt>{k}</dt>
+                <dd>{v}</dd>
+              </div>
+            ))}
+        </dl>
+      </div>
       {book.previewLink && (
         <a className="fm-preview" href={book.previewLink} target="_blank" rel="noopener noreferrer">
           {previewLabel}
@@ -231,13 +237,6 @@ export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit
           </svg>
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
-      )}
-      {description.length > 0 && (
-        <div className="fm-description">
-          {description.map((para, k) => (
-            <p key={k}>{para}</p>
-          ))}
-        </div>
       )}
     </div>
   )
@@ -259,11 +258,25 @@ export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit
       {book.notes ? (
         <p className="own-notes">{book.notes}</p>
       ) : (
-        <p className="own-notes own-notes--empty">{book.status === 'next' ? 'Not started yet.' : 'No notes on this one yet.'}</p>
+        onEdit && <p className="own-notes own-notes--empty">No notes yet. Add them with Edit book.</p>
       )}
-      {book.cover && !coverFailed && !geo.narrow && (
-        // a keepsake: the cover, printed in one ink and tucked into the page
-        <CoverPrint src={book.cover} ink={stampInk} />
+      {description.length > 0 && (
+        <section className="own-section">
+          <h3>What it’s about</h3>
+          {description.map((para, k) => (
+            <p key={k}>{para}</p>
+          ))}
+        </section>
+      )}
+      {alsoBy.length > 0 && (
+        <section className="own-section">
+          <h3>Also by {author} on this shelf</h3>
+          <ul className="own-also">
+            {alsoBy.map((b) => (
+              <li key={b.id}>{b.title}</li>
+            ))}
+          </ul>
+        </section>
       )}
     </div>
   )
@@ -345,6 +358,39 @@ export function BookSpread({ book, origin, genre, reducedMotion, onClose, onEdit
       </button>
     </div>
   )
+}
+
+/** The book's cover, tipped in; a printed stand-in sits underneath until (or unless) the image arrives. */
+function CoverPlate({ book }: { book: Book }) {
+  const [failed, setFailed] = useState(!book.cover)
+  const [loaded, setLoaded] = useState(false)
+  return (
+    <div className="fm-plate" style={{ '--spine-ink': INKS[book.spineInk], '--spine-text': inkOn(INKS[book.spineInk]) } as CSSProperties}>
+      <span className="fm-plate-type" aria-hidden="true">
+        {book.title}
+      </span>
+      {!failed && book.cover && (
+        <img
+          src={book.cover}
+          alt={`Cover of ${book.title}`}
+          draggable={false}
+          data-loaded={loaded || undefined}
+          onLoad={() => setLoaded(true)}
+          onError={() => setFailed(true)}
+          ref={(img) => {
+            if (img?.complete && img.naturalWidth > 0) setLoaded(true)
+          }}
+        />
+      )}
+    </div>
+  )
+}
+
+/** Roughly a minute and a quarter a page, rounded to something a person would say. */
+function readingTime(pages: number): string {
+  const hours = Math.round((pages * 1.25) / 60)
+  if (hours < 1) return 'Under an hour'
+  return hours === 1 ? '1 hour' : `${hours} hours`
 }
 
 /** Publisher blurbs run long; keep whole sentences up to roughly `max` characters. */
