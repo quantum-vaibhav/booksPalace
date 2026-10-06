@@ -634,5 +634,65 @@
     "pages": 172,
     "isbn": "9780312079505",
     "spineInk": "paper"
+  },
+  {
+    "id": "cosmos-carl-sagan",
+    "title": "Cosmos",
+    "authors": [
+      "Carl Sagan"
+    ],
+    "genre": "science",
+    "status": "read",
+    "year": 1980,
+    "pages": 396,
+    "isbn": "9780345539434",
+    "description": "Carl Sagan's tour of the universe and of how we came to understand it: from the Library of Alexandria and Kepler's orbits to the life cycles of stars, the search for life elsewhere and the fragile place of our own species in it. Written alongside his television series, it is as much about the joy of finding things out as about what has been found.",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780345539434-L.jpg",
+    "spineInk": "flatGold"
+  },
+  {
+    "id": "seven-brief-lessons-on-physics-carlo-rovelli",
+    "title": "Seven Brief Lessons on Physics",
+    "authors": [
+      "Carlo Rovelli"
+    ],
+    "genre": "science",
+    "status": "read",
+    "year": 2014,
+    "pages": 96,
+    "isbn": "9780399184413",
+    "description": "Seven short essays on the big ideas of modern physics: general relativity, quantum mechanics, the architecture of the cosmos, elementary particles, quantum gravity, the probability behind heat, and what all of it means for us. Rovelli writes for readers with no background in physics, and the whole book can be read in an afternoon.",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780399184413-L.jpg",
+    "spineInk": "teal"
+  },
+  {
+    "id": "deep-work-cal-newport",
+    "title": "Deep Work",
+    "authors": [
+      "Cal Newport"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2016,
+    "pages": 296,
+    "isbn": "9781455586691",
+    "description": "Cal Newport argues that the ability to concentrate without distraction on demanding work is becoming both rarer and more valuable. The first half makes the case; the second lays out rules for building a working life around focus, from scheduling deep sessions and embracing boredom to quitting social media and draining the shallows.",
+    "cover": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg",
+    "spineInk": "mint"
+  },
+  {
+    "id": "think-and-grow-rich-napoleon-hill",
+    "title": "Think and Grow Rich",
+    "authors": [
+      "Napoleon Hill"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1937,
+    "pages": 320,
+    "isbn": "9781585424337",
+    "description": "Napoleon Hill's Depression-era study of success, drawn from interviews with the wealthy figures of his day. He sets out thirteen steps, from a definite desire and faith to persistence and the mastermind group, and argues that a fixed purpose and the right habits of thought come before any fortune.",
+    "cover": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg",
+    "spineInk": "kellyGreen"
   }
 ]
