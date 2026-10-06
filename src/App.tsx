@@ -203,6 +203,7 @@ export default function App() {
         <BookSpread
           key={open.book.id}
           book={open.book}
+          library={books}
           origin={open.origin}
           genre={open.genre}
           reducedMotion={reducedMotion}
