@@ -1,0 +1,638 @@
+[
+  {
+    "id": "the-invisible-man-h-g-wells",
+    "title": "The Invisible Man",
+    "authors": [
+      "H. G. Wells"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 0,
+    "pages": 170,
+    "isbn": "9781693224188",
+    "description": "This book is the story of Griffin, a scientist who creates a serum to render himself invisible, and his descent into madness that follows.",
+    "cover": "https://covers.openlibrary.org/b/id/6419199-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL52266W",
+    "spineInk": "cornflower"
+  },
+  {
+    "id": "under-the-greenwood-tree-thomas-hardy",
+    "title": "Under the Greenwood Tree",
+    "authors": [
+      "Thomas Hardy"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1872,
+    "pages": 221,
+    "isbn": "9781098707699",
+    "description": "Under the Greenwood Tree is the story of the romantic entanglement between church musician, Dick Dewey, and the attractive new school mistress, Fancy Day. A pleasant romantic tale set in the Victorian era, Under the Greenwood Tree is one of Thomas Hardy's most gentle and pastoral novels.",
+    "cover": "https://covers.openlibrary.org/b/id/902186-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL44973W",
+    "spineInk": "slate"
+  },
+  {
+    "id": "metamorphosis-franz-kafka",
+    "title": "Metamorphosis",
+    "authors": [
+      "Franz Kafka"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1915,
+    "pages": 88,
+    "isbn": "9781974136117",
+    "description": "Metamorphosis (German: Die Verwandlung) is a novella written by Franz Kafka which was first published in 1915. One of Kafka's best-known works, Metamorphosis tells the story of salesman Gregor Samsa, who wakes one morning to find himself inexplicably transformed into a huge insect (German: ungeheueres Ungeziefer, lit. \"monstrous vermin\") and subsequently struggles to adjust to this new condition. The novella has been widely discussed among literary critics, with differing interpretations being offered. In popular culture and adaptations of the novella, the insect is commonly depicted as a cockroach.\r\n\r\nWith a length of about 70 printed pages over three chapters, it is the longest of the stories Kafka considered complete and published during his lifetime. The text was first published in 1915 in the October issue of the journal Die weißen Blätter under the editorship of René Schickele. The first edition in book form appeared in December 1915 in the series Der jüngste Tag, edited by Kurt Wolff.",
+    "cover": "https://covers.openlibrary.org/b/id/12820198-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL498556W",
+    "spineInk": "flatGold"
+  },
+  {
+    "id": "only-dull-people-are-brilliant-at-breakfast-osca",
+    "title": "Only Dull People Are Brilliant at Breakfast",
+    "authors": [
+      "Oscar Wilde"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 2016,
+    "pages": 64,
+    "isbn": "9780241251805",
+    "cover": "https://covers.openlibrary.org/b/id/13051784-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "the-stranger-albert-camus",
+    "title": "The Stranger",
+    "authors": [
+      "Albert Camus"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1980,
+    "pages": 178,
+    "cover": "https://covers.openlibrary.org/b/id/15070895-L.jpg",
+    "spineInk": "brown"
+  },
+  {
+    "id": "white-nights-fyodor-dostoevsky",
+    "title": "White Nights",
+    "authors": [
+      "Fyodor Dostoevsky"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1848,
+    "pages": 296,
+    "isbn": "9781015675810",
+    "description": "White nights; Notes from underground; a Faint heart; A Christmas tree and a wedding; Polzunkov; A Little hero; Mr. Prohartchin.",
+    "cover": "https://covers.openlibrary.org/b/id/8221238-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL10419081W",
+    "spineInk": "marineRed"
+  },
+  {
+    "id": "a-thousand-splendid-suns-khaled-hosseini",
+    "title": "A Thousand Splendid Suns",
+    "authors": [
+      "Khaled Hosseini"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 2007,
+    "pages": 406,
+    "isbn": "9780743567619",
+    "description": "After 103 weeks on the New York Times bestseller list and with four million copies of The Kite Runner shipped, Khaled Hosseini returns with a beautiful, riveting, and haunting novel that confirms his place as one of the most important literary writers today.\r\n\r\nPropelled by the same superb instinct for storytelling that made The Kite Runner a beloved classic, A Thousand Splendid Suns is at once an incredible chronicle of thirty years of Afghan history and a deeply moving story of family, friendship, faith, and the salvation to be found in love.\r\n\r\nBorn a generation apart and with very different ideas about love and family, Mariam and Laila are two women brought jarringly together by war, by loss and by fate. As they endure the ever escalating dangers around them—in their home as well as in the streets of Kabul—they come to form a bond that makes them both sisters and mother-daughter to each other, and that will ultimately alter the course not just of their own lives but of the next generation. With heart-wrenching power and suspense, Hosseini shows how a woman's love for her family can move her to shocking and heroic acts of self-sacrifice, and that in the end it is love, or even the memory of love, that is often the key to survival.\r\n\r\nA stunning accomplishment, A Thousand Splendid Suns is a haunting, heartbreaking, compelling story of an unforgiving time, an unlikely friendship, and an indestructible love.",
+    "cover": "https://covers.openlibrary.org/b/id/8579790-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "the-kite-runner-khaled-hosseini",
+    "title": "The Kite Runner",
+    "authors": [
+      "Khaled Hosseini"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 2003,
+    "pages": 371,
+    "isbn": "9781417640393",
+    "description": "The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father’s servant, The Kite Runner is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies.\r\n\r\nA sweeping story of family, love, and friendship told against the devastating backdrop of the history of Afghanistan over the last thirty years, The Kite Runner is an unusual and powerful novel that has become a beloved, one-of-a-kind classic.",
+    "cover": "https://covers.openlibrary.org/b/id/14846827-L.jpg",
+    "spineInk": "flatGold"
+  },
+  {
+    "id": "the-idiot-fyodor-dostoevsky",
+    "title": "The Idiot",
+    "authors": [
+      "Fyodor Dostoevsky"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1916,
+    "pages": 614,
+    "isbn": "9781544014302",
+    "cover": "https://covers.openlibrary.org/b/id/10249475-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL20906897W",
+    "spineInk": "hunterGreen"
+  },
+  {
+    "id": "crime-and-punishment-fyodor-dostoevsky",
+    "title": "Crime and Punishment",
+    "authors": [
+      "Fyodor Dostoevsky"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1941,
+    "pages": 551,
+    "isbn": "9781435131828",
+    "cover": "https://covers.openlibrary.org/b/id/13116014-L.jpg",
+    "spineInk": "brown"
+  },
+  {
+    "id": "norwegian-wood-haruki-murakami",
+    "title": "Norwegian Wood",
+    "authors": [
+      "Haruki Murakami"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1987,
+    "pages": 389,
+    "isbn": "9781417709069",
+    "description": "As his plane lands at a European airport, thirty-seven-year-old Toru Watanabe casually hears an old Beatles song. Suddenly, the music transports him back to his youth, to the turbulent Tokyo of the late sixties. He then remembers, with melancholy and unease, the unstable and mysterious Naoko, the girlfriend of his best—and only—friend from adolescence, Kizuki, and how Kizuki's suicide distanced them for a year until they reunited at university. There, they began an intimate relationship, which was soon cut short by Naoko’s fragile mental health, leading to her admission to a rest center. Shortly afterward, Watanabe fell in love with Midori, a lively and determined young woman. Indecisive and plagued by fears, Watanabe experienced only bewilderment and disillusionment in the very areas where everything was supposed to make sense: sex, love, and death. The unbearable situation led him to seek a delicate balance between his hopes and the need to find his place in the world.\r\n\r\nMientras su avión aterriza en un aeropuerto europeo, Toru Watanabe, de treinta y siete años, escucha casualmente una vieja canción de los Beatles: de pronto, la música le hace retroceder a su juventud, al turbulento Tokio de finales de los sesenta. Recuerda entonces, con melancolía y desasosiego, a la inestable y misteriosa Naoko, la novia de su mejor -y único- amigo de la adolescencia, Kizuki, y cómo el suicidio de éste les distanció durante un año, hasta que se reencontraron en la universidad. Iniciaron allí una relación íntima, truncada, sin embargo, por la frágil salud mental de Naoko, a quien hubo que internar en un centro de reposo. Al poco, Watanabe se enamoró de Midori, una joven activa y resuelta. Indeciso, acosado por los temores, Watanabe sólo experimentaba el deslumbramiento y el desengaño allá donde todo debía cobrar sentido: el sexo, el amor y la muerte. La insostenible situación le llevó entonces a intentar alcanzar el delicado equilibrio entre sus esperanzas y la necesidad de encontrar su lugar en el mundo.",
+    "cover": "https://covers.openlibrary.org/b/id/2237620-L.jpg",
+    "spineInk": "flatGold"
+  },
+  {
+    "id": "three-men-in-a-boat-jerome-k-jerome",
+    "title": "Three Men in a Boat",
+    "authors": [
+      "Jerome K. Jerome"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1889,
+    "pages": 184,
+    "isbn": "9781404336285",
+    "description": "Three feckless young men take a rowing holiday on the Thames river in 1888. \r\n\r\nReferenced by Robert A. Heinlein in Have Spacesuit Will Travel as Kip's father's favorite book. Inspired To Say Nothing of the Dog by Connie Willis.\r\n\r\n\r\n  [1]: https://openlibrary.org/authors/OL28641A/Robert_A._Heinlein\r\n  [2]: https://openlibrary.org/works/OL59727W/Have_Space_Suit_Will_Travel\r\n  [3]: https://openlibrary.org/works/OL14858398W/To_Say_Nothing_of_the_Dog_or_how_we_found_the_bishop's_bird_stump_at_last#about/about\r\n  [4]: https://openlibrary.org/authors/OL20934A/Connie_Willis",
+    "cover": "https://covers.openlibrary.org/b/id/8243006-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL1793164W",
+    "spineInk": "black"
+  },
+  {
+    "id": "jane-eyre-charlotte-bronte",
+    "title": "Jane Eyre",
+    "authors": [
+      "Charlotte Brontë"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 1847,
+    "pages": 480,
+    "isbn": "9781740254878",
+    "description": "The novel is set somewhere in the north of England. Jane's childhood at Gateshead Hall, where she is emotionally and physically abused by her aunt and cousins; her education at Lowood School, where she acquires friends and role models but also suffers privations and oppression; her time as the governess of Thornfield Hall, where she falls in love with her Byronic employer, Edward Rochester; her time with the Rivers family, during which her earnest but cold clergyman cousin, St John Rivers, proposes to her. Will she or will she not marry him?",
+    "cover": "https://covers.openlibrary.org/b/id/8235363-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL1095427W",
+    "spineInk": "brown"
+  },
+  {
+    "id": "the-alchemist-paulo-coelho",
+    "title": "The Alchemist",
+    "authors": [
+      "Paulo Coelho"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 2014,
+    "pages": 83,
+    "isbn": "9781411471016",
+    "cover": "https://covers.openlibrary.org/b/id/7846803-L.jpg",
+    "spineInk": "blue"
+  },
+  {
+    "id": "the-fifth-mountain-paulo-coelho",
+    "title": "The Fifth Mountain",
+    "authors": [
+      "Paulo Coelho"
+    ],
+    "genre": "fiction",
+    "status": "read",
+    "year": 2004,
+    "pages": 244,
+    "isbn": "9780007835478",
+    "cover": "https://covers.openlibrary.org/b/id/10754963-L.jpg",
+    "spineInk": "purple"
+  },
+  {
+    "id": "harry-potter-and-the-philosopher-s-stone-j-k-row",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 1997,
+    "pages": 302,
+    "isbn": "9781551927008",
+    "description": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'.\r\n\r\nHARRY POTTER has never even heard of Hogwarts when the LETTERS start dropping on the doormat at number four, Privet Drive. Addressed in GREEN INK on yellowish parchment with a PURPLE SEAL, they are swiftly confiscated by his GRISLY aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called RUBEUS HAGRID bursts in with some ASTONISHING news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+    "cover": "https://covers.openlibrary.org/b/id/15155833-L.jpg",
+    "spineInk": "marineRed"
+  },
+  {
+    "id": "harry-potter-and-the-chamber-of-secrets-j-k-rowl",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 1998,
+    "pages": 339,
+    "isbn": "9781408898093",
+    "description": "Throughout the summer holidays after his first year at Hogwarts School of Witchcraft and Wizardry, Harry Potter has been receiving sinister warnings from a house-elf called Dobby.\r\n\r\nNow, back at school to start his second year, Harry hears unintelligible whispers echoing through the corridors.\r\n\r\nBefore long the attacks begin: students are found as if turned to stone.\r\n\r\nDobby’s predictions seem to be coming true.\r\n\r\nSource\r\n\r\n\r\n  [1]: https://www.jkrowling.com/book/harry-potter-chamber-secrets/",
+    "cover": "https://covers.openlibrary.org/b/id/15158664-L.jpg",
+    "spineInk": "cornflower"
+  },
+  {
+    "id": "harry-potter-and-the-prisoner-of-azkaban-j-k-row",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 1999,
+    "pages": 416,
+    "isbn": "9780557911813",
+    "description": "For Harry Potter, it’s the start of another far-from-ordinary year at Hogwarts when the Knight Bus crashes through the darkness and comes to an abrupt halt in front of him.\r\n\r\nIt turns out that Sirius Black, mass-murderer and follower of Lord Voldemort, has escaped – and they say he is coming after Harry.\r\n\r\nIn his first Divination class, Professor Trelawney sees an omen of death in Harry’s tea leaves.\r\n\r\nAnd perhaps most frightening of all are the Dementors patrolling the school grounds with their soul-sucking kiss – in search of fresh victims.",
+    "cover": "https://covers.openlibrary.org/b/id/10580435-L.jpg",
+    "spineInk": "brown"
+  },
+  {
+    "id": "harry-potter-and-the-goblet-of-fire-j-k-rowling",
+    "title": "Harry Potter and the Goblet of Fire",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 2000,
+    "pages": 672,
+    "isbn": "9780606415170",
+    "description": "The fourth book in the Harry Potter franchise sees Harry returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron and Hermione . There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.",
+    "cover": "https://covers.openlibrary.org/b/id/12059372-L.jpg",
+    "spineInk": "brown"
+  },
+  {
+    "id": "harry-potter-and-the-order-of-the-phoenix-j-k-ro",
+    "title": "Harry Potter and the Order of the Phoenix",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 2003,
+    "pages": 870,
+    "isbn": "9781526618177",
+    "description": "After the Dementors’ attack on his cousin Dudley, Harry knows he is about to become Voldemort’s next target.\r\n\r\nAlthough many are denying the Dark Lord’s return, Harry is not alone, and a secret order is gathering at Grimmauld Place to fight against the Dark forces.\r\n\r\nMeanwhile, Voldemort’s savage assaults on Harry’s mind are growing stronger every day.\r\n\r\nHe must allow Professor Snape to teach him to protect himself before he runs out of time.\r\n(source)",
+    "cover": "https://covers.openlibrary.org/b/id/15158666-L.jpg",
+    "spineInk": "brown"
+  },
+  {
+    "id": "harry-potter-and-the-half-blood-prince-j-k-rowli",
+    "title": "Harry Potter and the Half-Blood Prince",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 2005,
+    "pages": 640,
+    "isbn": "9781644732120",
+    "description": "One summer night, when Dumbledore arrives at Privet Drive to collect Harry Potter, his wand hand is blackened and shriveled, but he will not reveal why.\r\n\r\nRumours and suspicion spread through the wizarding world – it feels as if even Hogwarts itself might be under threat.\r\n\r\nHarry is convinced that Malfoy bears the Dark Mark: could there be a Death Eater amongst them?\r\n\r\nHe will need powerful magic and true friends as, with the help of Dumbledore, he investigates Voldemort’s darkest secrets.",
+    "cover": "https://covers.openlibrary.org/b/id/10716273-L.jpg",
+    "spineInk": "indigo"
+  },
+  {
+    "id": "harry-potter-and-the-deathly-hallows-j-k-rowling",
+    "title": "Harry Potter and the Deathly Hallows",
+    "authors": [
+      "J. K. Rowling"
+    ],
+    "genre": "fantasy",
+    "status": "read",
+    "year": 2007,
+    "pages": 701,
+    "isbn": "9781484474129",
+    "description": "Harry Potter is leaving Privet Drive for the last time. But as he climbs into the sidecar of Hagrid’s motorbike and they take to the skies, he knows Lord Voldemort and the Death Eaters will not be far behind.\r\n\r\nThe protective charm that has kept him safe until now is broken. But the Dark Lord is breathing fear into everything he loves. And he knows he can’t keep hiding.\r\n\r\nTo stop Voldemort, Harry knows he must find the remaining Horcruxes and destroy them.\r\n\r\nHe will have to face his enemy in one final battle.",
+    "cover": "https://covers.openlibrary.org/b/id/15158660-L.jpg",
+    "spineInk": "slate"
+  },
+  {
+    "id": "the-hitchhiker-s-guide-to-the-galaxy-douglas-ada",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": "scifi",
+    "status": "read",
+    "year": 1979,
+    "pages": 216,
+    "isbn": "9780575074842",
+    "description": "The Hitchhiker's Guide to the Galaxy is the first of six books in the Hitchhiker's Guide to the Galaxy comedy science fiction \"hexalogy\" by Douglas Adams. The novel is an adaptation of the first four parts of Adams's radio series of the same name. The novel was first published in London on 12 October 1979. It sold 250,000 copies in the first three months.\r\n\r\nThe namesake of the novel is The Hitchhiker's Guide to the Galaxy, a fictional guide book for hitchhikers (inspired by the Hitch-hiker's Guide to Europe) written in the form of an encyclopaedia.",
+    "cover": "https://covers.openlibrary.org/b/id/12986869-L.jpg",
+    "spineInk": "hunterGreen"
+  },
+  {
+    "id": "the-restaurant-at-the-end-of-the-universe-dougla",
+    "title": "The Restaurant at the End of the Universe",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": "scifi",
+    "status": "read",
+    "year": 1980,
+    "pages": 224,
+    "isbn": "9781529034530",
+    "description": "The Restaurant at the End of the Universe is the second book in the Hitchhiker's Guide to the Galaxy comedy science fiction \"trilogy\" by Douglas Adams, and is a sequel. It was originally published by Pan Books as a paperback. The book was inspired by the song \"Grand Hotel\" by British rock band Procol Harum. The book title refers to Milliways, the Restaurant at the End of the Universe, one of the settings of the book.",
+    "cover": "https://covers.openlibrary.org/b/id/12714921-L.jpg",
+    "spineInk": "slate"
+  },
+  {
+    "id": "life-the-universe-and-everything-douglas-adams",
+    "title": "Life, the Universe and Everything",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": "scifi",
+    "status": "read",
+    "year": 1982,
+    "pages": 210,
+    "isbn": "9781529034547",
+    "description": "Life, the Universe and Everything is the third book in the five-volume Hitchhiker's Guide to the Galaxy science fiction \"trilogy\" by British writer Douglas Adams. The title refers to the Answer to Life, the Universe, and Everything.",
+    "cover": "https://covers.openlibrary.org/b/id/8569244-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "so-long-and-thanks-for-all-the-fish-douglas-adam",
+    "title": "So Long, and Thanks for All the Fish",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": "scifi",
+    "status": "read",
+    "year": 1984,
+    "pages": 200,
+    "isbn": "9780606251235",
+    "description": "Preceded by: Life, the Universe and Everything\r\n\r\nSo Long, and Thanks for All the Fish is the fourth book of the Hitchhiker's Guide to the Galaxy \"trilogy\" written by Douglas Adams. Its title is the message left by the dolphins when they departed Planet Earth just before it was demolished to make way for a hyperspace bypass, as described in The Hitchhiker's Guide to the Galaxy.\r\n\r\nFollowed by: Mostly Harmless",
+    "cover": "https://covers.openlibrary.org/b/id/11465415-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "mostly-harmless-douglas-adams",
+    "title": "Mostly Harmless",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "genre": "scifi",
+    "status": "read",
+    "year": 1991,
+    "pages": 259,
+    "isbn": "9781509844913",
+    "description": "In the fifth volume of the Hitchhiker series, Random, the daughter of Arthur Dent, leaves her remote home planet on the edge of the universe to set out a cross-galactic odyssey in search of her ancestors' native planet.",
+    "cover": "https://covers.openlibrary.org/b/id/11465755-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "astrophysics-for-people-in-a-hurry-neil-degrasse",
+    "title": "Astrophysics for People in a Hurry",
+    "authors": [
+      "Neil deGrasse Tyson"
+    ],
+    "genre": "science",
+    "status": "read",
+    "year": 2017,
+    "pages": 209,
+    "isbn": "9781538408018",
+    "description": "A short book for almost all ages, it’s simply astrophysics for people in a hurry, taught by acclaimed astrophysicist Neil deGrasse Tyson. This is a must-read for anyone who wants to know how the universe works!",
+    "cover": "https://covers.openlibrary.org/b/id/7984709-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "the-fabric-of-the-cosmos-brian-greene",
+    "title": "The Fabric of the Cosmos",
+    "authors": [
+      "Brian Greene"
+    ],
+    "genre": "science",
+    "status": "read",
+    "year": 2004,
+    "pages": 592,
+    "isbn": "9780375727207",
+    "description": "A magnificent challenge to conventional ideas' Financial Times'I thoroughly enjoyed this book. It manages to be both challenging and entertaining: it is highly recommended' the Independent'(Greene) send(s) the reader's imagination hurtling through the universe on an astonishing ride. As a popularizer of exquisitely abstract science, he is both a skilled and kindly explicator' the New York Times'Greene is as elegant as ever, cutting through the fog of complexity with insight and clarity; space and time become putty in his hands' Los Angeles Times Book Review",
+    "cover": "https://covers.openlibrary.org/b/id/6650337-L.jpg",
+    "spineInk": "paper"
+  },
+  {
+    "id": "helen-keller-autobiography-helen-keller",
+    "title": "Helen Keller Autobiography",
+    "authors": [
+      "Helen Keller"
+    ],
+    "genre": "history",
+    "status": "read",
+    "year": 2018,
+    "pages": 127,
+    "isbn": "9781790628247",
+    "cover": "https://covers.openlibrary.org/b/id/13761620-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "shoe-dog-phil-knight",
+    "title": "Shoe Dog",
+    "authors": [
+      "Phil Knight"
+    ],
+    "genre": "history",
+    "status": "read",
+    "year": 2014,
+    "pages": 386,
+    "isbn": "9781501150111",
+    "description": "\"In this candid and riveting memoir, for the first time ever, Nike founder and CEO Phil Knight shares the inside story of the company's early days as an intrepid start-up and its evolution into one of the world's most iconic, game-changing, and profitable brands. In 1962, fresh out of business school, Phil Knight borrowed $50 from his father and created a company with a simple mission: import high-quality, low-cost athletic shoes from Japan. Selling the shoes from the trunk of his lime green Plymouth Valiant, Knight grossed $8,000 his first year. Today, Nike's annual sales top $30 billion. In an age of startups, Nike is the ne plus ultra of all startups, and the swoosh has become a revolutionary, globe-spanning icon, one of the most ubiquitous and recognizable symbols in the world today. But Knight, the man behind the swoosh, has always remained a mystery. Now, for the first time, in a memoir that is candid, humble, gutsy, and wry, he tells his story, beginning with his crossroads moment. At 24, after backpacking around the world, he decided to take the unconventional path, to start his own business--a business that would be dynamic, different. Knight details the many risks and daunting setbacks that stood between him and his dream--along with his early triumphs. Above all, he recalls the formative relationships with his first partners and employees, a ragtag group of misfits and seekers who became a tight-knit band of brothers. Together, harnessing the transcendent power of a shared mission, and a deep belief in the spirit of sport, they built a brand that changed everything\"--",
+    "cover": "https://covers.openlibrary.org/b/id/8858487-L.jpg",
+    "spineInk": "brightRed"
+  },
+  {
+    "id": "a-room-of-one-s-own-virginia-woolf",
+    "title": "A Room of One's Own",
+    "authors": [
+      "Virginia Woolf"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1929,
+    "pages": 143,
+    "isbn": "9781607966548",
+    "description": "A Room of One's Own is an extended essay by Virginia Woolf. First published on 24 October 1929, the essay was based on a series of lectures she delivered at Newnham College and Girton College, two women's colleges at Cambridge University in October 1928. While this extended essay in fact employs a fictional narrator and narrative to explore women both as writers of and characters in fiction, the manuscript for the delivery of the series of lectures, titled \"Women and Fiction\", and hence the essay, are considered non-fiction. The essay is generally seen as a feminist text, and is noted in its argument for both a literal and figural space for women writers within a literary tradition dominated by patriarchy.",
+    "cover": "https://covers.openlibrary.org/b/id/6559057-L.jpg",
+    "previewLink": "https://openlibrary.org/works/OL39379W",
+    "spineInk": "federalBlue"
+  },
+  {
+    "id": "the-tao-of-warren-buffett-mary-buffett-david-cla",
+    "title": "The Tao of Warren Buffett",
+    "authors": [
+      "Mary Buffett & David Clark"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2006,
+    "pages": 192,
+    "isbn": "9781416541325",
+    "cover": "https://covers.openlibrary.org/b/id/2999045-L.jpg",
+    "spineInk": "paper"
+  },
+  {
+    "id": "buffettology-mary-buffett-david-clark",
+    "title": "Buffettology",
+    "authors": [
+      "Mary Buffett & David Clark"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2022,
+    "isbn": "9781669385424",
+    "spineInk": "hunterGreen"
+  },
+  {
+    "id": "warren-buffett-and-the-interpretation-of-financi",
+    "title": "Warren Buffett and the Interpretation of Financial Statements",
+    "authors": [
+      "Mary Buffett & David Clark"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2008,
+    "isbn": "9781847374370",
+    "spineInk": "yellow"
+  },
+  {
+    "id": "rich-dad-poor-dad-robert-t-kiyosaki",
+    "title": "Rich Dad Poor Dad",
+    "authors": [
+      "Robert T. Kiyosaki"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1990,
+    "pages": 243,
+    "isbn": "9780762434275",
+    "description": "April of 2022 marks a 25-year milestone for the personal finance classic Rich Dad Poor Dad that still ranks as the #1 Personal Finance book of all time. And although 25 years have passed since Rich Dad Poor Dad was first published, readers will find that very little in the book itself has changed — and for good reason. While so much in our world is changing a high speed, the lessons about money and the principles of Rich Dad Poor Dad haven’t changed. Today, as money continues to play a key role in our daily lives, the messages in Robert Kiyosaki’s international bestseller are more timely and more important than ever.\r\n\r\nMilestones \r\n\r\nWhile there is a milestone  to commemorate — and a new section in the book on Why Milestones Are Important — preserving the integrity of the original content is testimony to the fact that this book has truly stood the test of time. The sidebars throughout the book (that were updated for the 20-year anniversary edition) have been updated again, but the core principles that parents and grandparents — those who embraced Robert’s story and messages 25 years ago — are sharing them with new generations who have found that its timeless wisdom and no-nonsense lessons can be applied to anyone’s life and their vision for a future that includes taking control of their finances.\r\nPeople of all cultures and countries celebrate milestones. We use them to measure time, mark progress, reflect on the lessons we’ve learned, and celebrate accomplishments… and they give meaning to our life’s journey. They are a way that we integrate past, present, and future… looking back at where we started, where we are today… and the promise of all that the future can hold.",
+    "cover": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
+    "spineInk": "flatGold"
+  },
+  {
+    "id": "the-hard-thing-about-hard-things-ben-horowitz",
+    "title": "The Hard Thing About Hard Things",
+    "authors": [
+      "Ben Horowitz"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2014,
+    "pages": 145,
+    "isbn": "9780062273215",
+    "cover": "https://covers.openlibrary.org/b/id/7279515-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "the-intelligent-investor-benjamin-graham",
+    "title": "The Intelligent Investor",
+    "authors": [
+      "Benjamin Graham"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1949,
+    "pages": 360,
+    "isbn": "9780887308369",
+    "description": "This classic text is annotated to update Graham's timeless wisdom for today's market conditions... \r\n\r\nThe greatest investment advisor of the twentieth century, Benjamin Graham, taught and inspired people worldwide. Graham's philosophy of \"value investing\" -- which shields investors from substantial error and teaches them to develop long-term strategies -- has made The Intelligent Investor the stock market bible ever since its original publication in 1949.\r\n\r\nOver the years, market developments have proven the wisdom of Graham's strategies. While preserving the integrity of Graham's original text, this revised edition includes updated commentary by noted financial journalist Jason Zweig, whose perspective incorporates the realities of today's market, draws parallels between Graham's examples and today's financial headlines, and gives readers a more thorough understanding of how to apply Graham's principles.\r\n\r\nVital and indispensable, this HarperBusiness Essentials edition of The Intelligent Investor is the most important book you will ever read on how to reach your financial goals.",
+    "cover": "https://covers.openlibrary.org/b/id/36434-L.jpg",
+    "spineInk": "sunflower"
+  },
+  {
+    "id": "what-is-existentialism-simone-de-beauvoir",
+    "title": "What Is Existentialism?",
+    "authors": [
+      "Simone de Beauvoir"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 2020,
+    "pages": 128,
+    "isbn": "9780241475232",
+    "description": "\"How should we think and act in the world? These writings on the human condition by one of the twentieth century's great philosophers explore the absurdity of our notions of good and evil, and show instead how we make our own destiny simply by being.\"--",
+    "cover": "https://covers.openlibrary.org/b/id/14624326-L.jpg",
+    "spineInk": "paper"
+  },
+  {
+    "id": "the-myth-of-sisyphus-albert-camus",
+    "title": "The Myth of Sisyphus",
+    "authors": [
+      "Albert Camus"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1955,
+    "pages": 212,
+    "isbn": "9780394437606",
+    "description": "One of the most influential works of this century, this is a crucial exposition of existentialist thought. Influenced by works such as Don Juan and the novels of Kafka, these essays begin with a meditation on suicide: the question of living or not living in an absurd universe devoid of order or meaning. With lyric eloquence, Camus posits a way out of despair, reaffirming the value of personal existence, and the possibility of life lived with dignity and authenticity.--From publisher description.",
+    "cover": "https://covers.openlibrary.org/b/id/12726570-L.jpg",
+    "spineInk": "black"
+  },
+  {
+    "id": "psycho-cybernetics-maxwell-maltz",
+    "title": "Psycho-Cybernetics",
+    "authors": [
+      "Maxwell Maltz"
+    ],
+    "genre": "mind",
+    "status": "read",
+    "year": 1960,
+    "pages": 270,
+    "isbn": "9780671632588",
+    "description": "Cybernetics (loosely translated from the Greek): “a helmsman who steers his ship to port.” Psycho-Cybernetics is a term coined by Dr. Maxwell Maltz, which means, “steering your mind to a productive, useful goal so you can reach the greatest port in the world, peace of mind.”\r\n\r\nSince its first publication in 1960, Maltz’s landmark bestseller has inspired and enhanced the lives of more than 30 million readers. In this updated edition, with a new introduction and editorial commentary by Matt Furey, president of the Psycho-Cybernetics Foundation, the original text has been annotated and amplified to make Maltz’s message even more relevant for the contemporary reader.\r\n\r\n“Before the mind can work efficiently, we must develop our perception of the outcomes we expect to reach. Maxwell Maltz calls this Psycho-Cybernetics; when the mind has a defined target it can focus and direct and refocus and redirect until it reaches its intended goal.” —Tony Robbins (from Unlimited Power)\r\n\r\nMaltz was the first researcher and author to explain how the self-image (a term he popularized) has complete control over an individual’s ability to achieve (or fail to achieve) any goal. And he developed techniques for improving and managing self-image—visualization, mental rehearsal, relaxation—which have informed and inspired countless motivational gurus, sports psychologists, and self-help practitioners for more than fifty years.\r\n\r\nThe teachings of Psycho-Cybernetics are timeless because they are based on solid science and provide a prescription for thinking and acting that lead to quantifiable results.",
+    "cover": "https://covers.openlibrary.org/b/id/14428293-L.jpg",
+    "spineInk": "marineRed",
+    "finished": "2026-10"
+  },
+  {
+    "id": "reality-is-not-what-it-seems-carlo-rovelli",
+    "title": "Reality Is Not What It Seems",
+    "authors": [
+      "Carlo Rovelli"
+    ],
+    "genre": "science",
+    "status": "next",
+    "year": 2017,
+    "pages": 261,
+    "isbn": "9780141983219",
+    "description": "This is an English translation of \"La realtà non è come ci appare\" originally written in Italian.",
+    "cover": "https://covers.openlibrary.org/b/id/9269326-L.jpg",
+    "spineInk": "mint"
+  },
+  {
+    "id": "waiting-for-godot-samuel-beckett",
+    "title": "Waiting for Godot",
+    "authors": [
+      "Samuel Beckett"
+    ],
+    "genre": "fiction",
+    "status": "next",
+    "year": 1992,
+    "pages": 172,
+    "isbn": "9780312079505",
+    "spineInk": "paper"
+  }
+]
