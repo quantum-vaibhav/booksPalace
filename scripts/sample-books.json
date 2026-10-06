@@ -1,0 +1,54 @@
+[
+  { "title": "Kafka on the Shore", "author": "Haruki Murakami", "genre": "fiction", "rating": 4, "finished": "2024-02", "notes": "Two stories that never quite meet and still feel like one. I stopped trying to solve it halfway through and enjoyed it far more.", "sample": true },
+  { "title": "Never Let Me Go", "author": "Kazuo Ishiguro", "genre": "fiction", "rating": 5, "finished": "2023-11", "notes": "Quiet enough that the horror arrives late, and it stays. The calmest sad book I've read.", "sample": true },
+  { "title": "Let the Great World Spin", "author": "Colum McCann", "genre": "fiction", "rating": 4, "finished": "2024-06", "notes": "A whole city strung on one wire walk. Every chapter changes voice and somehow it holds.", "sample": true },
+  { "title": "Pride and Prejudice", "author": "Jane Austen", "genre": "fiction", "rating": 5, "finished": "2022-08", "notes": "Funnier than I remembered from school. Mr Collins alone is worth the reread.", "favoriteLine": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.", "sample": true },
+  { "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "genre": "fiction", "rating": 4, "finished": "2023-04", "notes": "Shorter than its reputation. The last page does all the work.", "favoriteLine": "So we beat on, boats against the current, borne back ceaselessly into the past.", "sample": true },
+  { "title": "Stoner", "author": "John Williams", "genre": "fiction", "rating": 5, "finished": "2024-09", "notes": "An ordinary life told with total attention. I didn't expect a book about a farm boy turned professor to wreck me.", "sample": true },
+  { "title": "The Remains of the Day", "author": "Kazuo Ishiguro", "genre": "fiction", "status": "reading", "notes": "Halfway. Stevens is the most unreliable reliable narrator.", "sample": true },
+
+  { "title": "The Hound of the Baskervilles", "author": "Arthur Conan Doyle", "genre": "mystery", "rating": 4, "finished": "2022-10", "notes": "Read it on a foggy week, which felt like cheating.", "favoriteLine": "Mr. Holmes, they were the footprints of a gigantic hound!", "sample": true },
+  { "title": "Gone Girl", "author": "Gillian Flynn", "genre": "mystery", "rating": 4, "finished": "2023-01", "notes": "The midpoint turn is earned. I disliked everyone and kept reading anyway.", "sample": true },
+  { "title": "The Secret History", "author": "Donna Tartt", "genre": "mystery", "rating": 5, "finished": "2023-07", "notes": "Tells you the murder on page one and is still unbearably tense.", "sample": true },
+  { "title": "And Then There Were None", "author": "Agatha Christie", "genre": "mystery", "rating": 4, "finished": "2022-12", "notes": "The template for a hundred books since, and still the tightest.", "sample": true },
+  { "title": "The Silent Patient", "author": "Alex Michaelides", "genre": "mystery", "rating": 3, "finished": "2024-03", "notes": "A fast read with one big trick. Fun once.", "sample": true },
+
+  { "title": "Nineteen Eighty-Four", "author": "George Orwell", "genre": "scifi", "rating": 5, "finished": "2021-05", "notes": "Less about surveillance than about language. Newspeak is the scariest part.", "sample": true },
+  { "title": "Blindsight", "author": "Peter Watts", "genre": "scifi", "rating": 4, "finished": "2024-01", "notes": "Hard going and full of ideas about consciousness I'm still chewing on.", "sample": true },
+  { "title": "Dune", "author": "Frank Herbert", "genre": "scifi", "rating": 5, "finished": "2021-11", "notes": "Ecology, religion and politics as one system. The appendices are worth reading.", "sample": true },
+  { "title": "The Left Hand of Darkness", "author": "Ursula K. Le Guin", "genre": "scifi", "rating": 5, "finished": "2023-02", "notes": "The ice crossing is one of the great friendships in fiction.", "sample": true },
+  { "title": "Project Hail Mary", "author": "Andy Weir", "genre": "scifi", "rating": 4, "finished": "2024-05", "notes": "Pure problem-solving joy. Rocky deserves his own book.", "sample": true },
+  { "title": "The Time Machine", "author": "H. G. Wells", "genre": "scifi", "rating": 3, "finished": "2022-06", "notes": "Short, strange, and more political than I expected.", "favoriteLine": "It is a law of nature we overlook, that intellectual versatility is the compensation for change, danger, and trouble.", "sample": true },
+  { "title": "Frankenstein", "author": "Mary Shelley", "genre": "scifi", "rating": 4, "finished": "2022-10", "notes": "The creature is the most eloquent person in it.", "favoriteLine": "Beware; for I am fearless, and therefore powerful.", "sample": true },
+
+  { "title": "The Hobbit", "author": "J. R. R. Tolkien", "genre": "fantasy", "rating": 4, "finished": "2021-12", "notes": "Comfort reading. The riddle game is perfect.", "sample": true },
+  { "title": "A Wizard of Earthsea", "author": "Ursula K. Le Guin", "genre": "fantasy", "rating": 5, "finished": "2023-03", "notes": "A whole magic system built on true names, in under two hundred pages.", "sample": true },
+  { "title": "Piranesi", "author": "Susanna Clarke", "genre": "fantasy", "status": "reading", "notes": "Still in the halls. Not sure what's going on, happy not to know yet.", "sample": true },
+  { "title": "The Name of the Wind", "author": "Patrick Rothfuss", "genre": "fantasy", "rating": 3, "finished": "2022-04", "notes": "Gorgeous sentences, and I'm still waiting for book three like everyone else.", "sample": true },
+  { "title": "Jonathan Strange & Mr Norrell", "author": "Susanna Clarke", "genre": "fantasy", "rating": 4, "finished": "2024-08", "notes": "Footnotes that are better than most novels.", "sample": true },
+
+  { "title": "Sapiens", "author": "Yuval Noah Harari", "genre": "history", "rating": 4, "finished": "2021-03", "notes": "Big claims, fast pace. Good for starting arguments at dinner.", "sample": true },
+  { "title": "Bad Blood", "author": "John Carreyrou", "genre": "history", "rating": 5, "finished": "2022-02", "notes": "Reads like a thriller. The whistleblowers are the heroes.", "sample": true },
+  { "title": "Educated", "author": "Tara Westover", "genre": "history", "rating": 5, "finished": "2022-07", "notes": "About memory as much as school. Hard to read and hard to put down.", "sample": true },
+  { "title": "The Guns of August", "author": "Barbara W. Tuchman", "genre": "history", "rating": 4, "finished": "2023-09", "notes": "Thirty days that decided the century, told hour by hour.", "sample": true },
+  { "title": "Shoe Dog", "author": "Phil Knight", "genre": "history", "rating": 4, "finished": "2023-05", "notes": "Much more anxious and honest than a founder memoir has to be.", "sample": true },
+  { "title": "Steve Jobs", "author": "Walter Isaacson", "genre": "history", "rating": 3, "finished": "2021-08", "notes": "Long, and it doesn't flatter him, which I liked.", "sample": true },
+
+  { "title": "A Brief History of Time", "author": "Stephen Hawking", "genre": "science", "rating": 4, "finished": "2021-06", "notes": "Understood about seventy percent. The light-cone chapter finally clicked.", "sample": true },
+  { "title": "The Selfish Gene", "author": "Richard Dawkins", "genre": "science", "rating": 4, "finished": "2022-03", "notes": "Changed how I see almost every animal documentary.", "sample": true },
+  { "title": "On the Origin of Species", "author": "Charles Darwin", "genre": "science", "rating": 4, "finished": "2023-08", "notes": "Slow in the middle, then the last chapter lands it.", "favoriteLine": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one.", "sample": true },
+  { "title": "The Gene", "author": "Siddhartha Mukherjee", "genre": "science", "status": "reading", "notes": "On the Mendel chapters. Part history, part family memoir.", "sample": true },
+  { "title": "Being Wrong", "author": "Kathryn Schulz", "genre": "science", "rating": 4, "finished": "2024-04", "notes": "Makes a strong case that being wrong feels exactly like being right.", "sample": true },
+  { "title": "Thinking, Fast and Slow", "author": "Daniel Kahneman", "genre": "science", "rating": 4, "finished": "2022-11", "notes": "Dense, but System 1 versus System 2 is now how I think about thinking.", "sample": true },
+
+  { "title": "101 Essays That Will Change The Way You Think", "author": "Brianna Wiest", "genre": "mind", "rating": 3, "finished": "2023-06", "notes": "Best read a few essays at a time, not front to back.", "sample": true },
+  { "title": "Meditations", "author": "Marcus Aurelius", "genre": "mind", "rating": 5, "finished": "2022-01", "notes": "A private notebook that became everyone's. I keep it on the desk.", "favoriteLine": "Remember this, that very little is needed to make a happy life.", "sample": true },
+  { "title": "Atomic Habits", "author": "James Clear", "genre": "mind", "rating": 4, "finished": "2021-09", "notes": "One idea, explained well and often. The two-minute rule stuck.", "sample": true },
+  { "title": "Man's Search for Meaning", "author": "Viktor E. Frankl", "genre": "mind", "rating": 5, "finished": "2022-05", "notes": "Short, and it puts every complaint in perspective.", "sample": true },
+  { "title": "The Courage to Be Disliked", "author": "Ichiro Kishimi", "genre": "mind", "rating": 3, "finished": "2024-07", "notes": "A dialogue that argues with you. I didn't agree with all of it, which was the point.", "sample": true },
+
+  { "title": "Middlemarch", "author": "George Eliot", "genre": "fiction", "status": "next", "sample": true },
+  { "title": "The Overstory", "author": "Richard Powers", "genre": "fiction", "status": "next", "sample": true },
+  { "title": "The Brothers Karamazov", "author": "Fyodor Dostoevsky", "genre": "fiction", "status": "next", "sample": true },
+  { "title": "Gödel, Escher, Bach", "author": "Douglas R. Hofstadter", "genre": "science", "status": "next", "sample": true }
+]
