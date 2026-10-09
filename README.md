@@ -17,6 +17,10 @@ npm run build
 
 The build in `dist/` is a static, read-only site: host it anywhere (Netlify, Vercel, GitHub Pages). The editor isn't included in it.
 
+## Hosting
+
+Every push to `main` builds the site and publishes it to GitHub Pages (`.github/workflows/deploy.yml`) at https://quantum-vaibhav.github.io/booksPalace/. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
 ## Load your own books
 
 The shelf ships with sample books. Put your list in a text file, one book per line, with `#` lines naming the genre:
