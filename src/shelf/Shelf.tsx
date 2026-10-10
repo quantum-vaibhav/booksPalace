@@ -35,7 +35,10 @@ interface Props {
   onAddNext?(): void
 }
 
-const smoothstep = (x: number) => {
+/** Shelf travel per pixel of vertical swipe: a phone is short, the shelf is long. */
+const SWIPE_GAIN = 1.6
+
+const smoothstep =(x: number) => {
   const t = Math.max(0, Math.min(1, x))
   return t * t * (3 - 2 * t)
 }
@@ -48,6 +51,8 @@ export const Shelf = forwardRef<ShelfHandle, Props>(function Shelf(
   const plank = useRef<HTMLDivElement>(null)
   const runRefs = useRef<(HTMLElement | null)[]>([])
   const glide = useRef({ target: 0, current: 0, raf: 0, active: false })
+  /** when the last touch swipe ended, so the tap it started on doesn't also open a book */
+  const swipedAt = useRef(-Infinity)
 
   // ---- where along the shelf are we, as a continuous genre index -------------
   const measure = useCallback(() => {
@@ -147,6 +152,65 @@ export const Shelf = forwardRef<ShelfHandle, Props>(function Shelf(
     return () => window.removeEventListener('wheel', onWheel)
   }, [paused, glideTo])
 
+  // ---- on touch screens an up/down swipe anywhere travels the shelf too ----------
+  // (sideways swipes on the shelf scroll it natively; the page itself never scrolls)
+  useEffect(() => {
+    if (paused) return
+    let t: { x: number; y: number; left: number; axis: 'x' | 'y' | null; lastY: number; lastT: number; v: number } | null = null
+    const onStart = (e: TouchEvent) => {
+      const target = e.target as HTMLElement | null
+      if (e.touches.length !== 1 || target?.closest('[data-own-scroll], .genre-index')) {
+        t = null
+        return
+      }
+      const el = scroller.current
+      if (!el) return
+      const g = glide.current
+      cancelAnimationFrame(g.raf)
+      g.raf = 0
+      g.active = false
+      const { clientX: x, clientY: y } = e.touches[0]
+      t = { x, y, left: el.scrollLeft, axis: null, lastY: y, lastT: e.timeStamp, v: 0 }
+    }
+    const onMove = (e: TouchEvent) => {
+      const el = scroller.current
+      if (!t || !el || e.touches.length !== 1) return
+      const { clientX: x, clientY: y } = e.touches[0]
+      const dx = x - t.x
+      const dy = y - t.y
+      if (!t.axis) {
+        if (Math.hypot(dx, dy) < 8) return
+        t.axis = Math.abs(dy) > Math.abs(dx) ? 'y' : 'x'
+      }
+      if (t.axis !== 'y') return
+      // swipe up to move on, as a wheel scrolled down does
+      el.scrollLeft = t.left - dy * SWIPE_GAIN
+      const dt = e.timeStamp - t.lastT
+      if (dt > 0) t.v = t.v * 0.4 + ((y - t.lastY) / dt) * 0.6
+      t.lastY = y
+      t.lastT = e.timeStamp
+    }
+    const onEnd = (e: TouchEvent) => {
+      const el = scroller.current
+      if (t?.axis) swipedAt.current = performance.now()
+      if (t?.axis === 'y' && el && e.timeStamp - t.lastT < 80 && Math.abs(t.v) > 0.2) {
+        // carry the flick on, easing out
+        glideTo(el.scrollLeft - t.v * SWIPE_GAIN * 260)
+      }
+      t = null
+    }
+    window.addEventListener('touchstart', onStart, { passive: true })
+    window.addEventListener('touchmove', onMove, { passive: true })
+    window.addEventListener('touchend', onEnd, { passive: true })
+    window.addEventListener('touchcancel', onEnd, { passive: true })
+    return () => {
+      window.removeEventListener('touchstart', onStart)
+      window.removeEventListener('touchmove', onMove)
+      window.removeEventListener('touchend', onEnd)
+      window.removeEventListener('touchcancel', onEnd)
+    }
+  }, [paused, glideTo])
+
   useEffect(() => () => cancelAnimationFrame(glide.current.raf), [])
 
   useImperativeHandle(ref, () => ({
@@ -193,6 +257,12 @@ export const Shelf = forwardRef<ShelfHandle, Props>(function Shelf(
           measure()
         }}
         onKeyDown={onKeyDown}
+        onClickCapture={(e) => {
+          if (performance.now() - swipedAt.current < 400) {
+            e.preventDefault()
+            e.stopPropagation()
+          }
+        }}
       >
         <div className="shelf-track">
           {runs.map((run, k) => (
