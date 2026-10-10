@@ -266,7 +266,7 @@ Flat printed blocks; nothing glows.
 - **Preview link:** on the open front matter, an inverted block (endpaper-text ground, endpaper text) with an inline 12px arrow-out icon.
 
 ### Navigation
-- **Genre index:** a centred row of Anybody 600 14px links at 68% opacity. Hover goes to full opacity; the current genre gets full opacity and a 3px underline at 6px offset, animated in over 200ms. On phones it becomes a single scrolling row under the wordmark.
+- **Genre index:** a centred row of Anybody 600 14px links at 68% opacity. Hover goes to full opacity; the current genre gets full opacity and a 3px underline at 6px offset, animated in over 200ms. On phones it becomes a single scrolling row under the wordmark; on a phone held sideways (under 520px tall) wordmark, genres and tally share one row. On touch screens every control is at least 44px tall.
 - **Keyboard:** arrow keys, Home and End walk the shelf book by book.
 
 ### Editor (development only)
@@ -286,7 +286,8 @@ The book being read carries a fluorescent-pink ribbon, a third of the spine wide
 Clicking a spine pulls the book off the shelf, turns it 90 degrees to face the reader (850ms ease-out), then swings the cover open 180 degrees as the block slides to centre (800ms ease-in-out). The backdrop is the genre's own field mixed 24% into near-black: the room after dark.
 - **Left page, the endpaper:** the genre's field ink tiled tone-on-tone with the genre's motif (birds, rain, stars, lanterns, sundial, orbits, ripples, rays) in black at 11%. The title is set huge (display 850, 122% width, sized so its longest word fits) and overprinted in the genre's word ink when that stays legible, echoing the giant word in the sky. Below: byline, a ruled colophon (label left, figure right), the preview link and the description.
 - **Right page, the reader's record:** paper with gutter shade and stacked page edges. A crooked library date stamp (Finished and the month, Reading now, Up next) and the rating as five circles, both in whichever genre ink reads best on paper; the favourite line large under a hanging quote mark; notes opening with a display drop cap; and at the foot the cover as a one-ink print (drawn on canvas, screened over the stamp ink), tucked in at an angle. A book being read has a pink ribbon falling from the page head beside the gutter.
-- **Phones:** a single page printed entirely on the patterned endpaper; stamp, rating and quote mark switch to the endpaper's text colour and the cover print is left out.
+- **Phones:** a single page printed entirely on the patterned endpaper; stamp, rating and quote mark switch to the endpaper's text colour and the cover print is left out. Held sideways, the page is wide and full-height with Close beside it, and it re-fits when the phone turns.
+- **Touch:** an up/down swipe anywhere travels the shelf, as the wheel does, and a flick carries on with the same glide. Spines lift on press instead of hover, since a tap would leave hover stuck.
 - Content fades in once open; text past the foot fades into a 48px veil of the page's colour. Escape, the backdrop or "Close book" reverses the sequence back to the spine. If no cover image loads, a typeset cover in the spine ink stands in.
 
 ### Plank

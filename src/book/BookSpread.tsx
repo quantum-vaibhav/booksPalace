@@ -32,8 +32,14 @@ function geometry(origin: DOMRect): Geometry {
   // a two-page spread when two portrait pages fit side by side, otherwise one page
   let H = Math.min(vh * 0.84, 680)
   let W = H * 0.68
-  const narrow = W * 2 > vw * 0.92
-  if (narrow) {
+  // a phone on its side: too short for two pages that can hold anything
+  const short = vh < 520 && vw > vh
+  const narrow = short || W * 2 > vw * 0.92
+  if (short) {
+    // one wide page, the full height, with room beside it for Close
+    H = vh - 24
+    W = Math.max(300, Math.min(540, vw - 2 * 164))
+  } else if (narrow) {
     W = Math.min(vw - 32, 460)
     H = Math.min(vh - 104, W / 0.66)
   }
@@ -58,7 +64,7 @@ export function BookSpread({ book, library, origin, genre, reducedMotion, onClos
   const backdrop = useRef<HTMLDivElement>(null)
   const closeBtn = useRef<HTMLButtonElement>(null)
   const closing = useRef(false)
-  const [geo] = useState(() => geometry(origin.getBoundingClientRect()))
+  const [geo, setGeo] = useState(() => geometry(origin.getBoundingClientRect()))
   const [opened, setOpened] = useState(false)
   const [coverFailed, setCoverFailed] = useState(!book.cover)
   const [coverLoaded, setCoverLoaded] = useState(false)
@@ -67,17 +73,22 @@ export function BookSpread({ book, library, origin, genre, reducedMotion, onClos
   const fieldText = inkOn(field)
   const headInk = INKS[genre.scene.word]
 
+  // the open/close animations run from closures made on the first render; read the live size
+  const geoRef = useRef(geo)
+  geoRef.current = geo
+
   const fromShelf = () => {
     const r = origin.getBoundingClientRect()
-    return { x: r.left + r.width / 2, y: r.top + r.height / 2 - geo.H / 2, scale: r.height / geo.H, rotateY: 90 }
+    const { H } = geoRef.current
+    return { x: r.left + r.width / 2, y: r.top + r.height / 2 - H / 2, scale: r.height / H, rotateY: 90 }
   }
   const centred = () => ({
-    x: window.innerWidth / 2 - geo.W / 2,
-    y: (window.innerHeight - geo.H) / 2,
+    x: window.innerWidth / 2 - geoRef.current.W / 2,
+    y: (window.innerHeight - geoRef.current.H) / 2,
     scale: 1,
     rotateY: 0,
   })
-  const spread = () => ({ ...centred(), x: geo.narrow ? window.innerWidth / 2 - geo.W / 2 : window.innerWidth / 2 })
+  const spread = () => ({ ...centred(), x: geoRef.current.narrow ? window.innerWidth / 2 - geoRef.current.W / 2 : window.innerWidth / 2 })
 
   useLayoutEffect(() => {
     const el = book3d.current!
@@ -144,6 +155,26 @@ export function BookSpread({ book, library, origin, genre, reducedMotion, onClos
     onClose()
   }
 
+  // turning the phone (or resizing the window) while the book is open re-fits the page
+  useEffect(() => {
+    if (!opened) return
+    const onResize = () => {
+      const next = geometry(origin.getBoundingClientRect())
+      if (next.narrow !== geo.narrow) {
+        // the layout itself changed (one page / two): close rather than show a half-built spread
+        close()
+        return
+      }
+      setGeo(next)
+      geoRef.current = next
+      const end = spread()
+      animate(book3d.current!, { x: end.x, y: end.y }, { duration: 0 })
+    }
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [opened, geo.narrow])
+
   useEffect(() => {
     const onKey = (e: globalThis.KeyboardEvent) => {
       if (e.key === 'Escape') close()
@@ -204,7 +235,7 @@ export function BookSpread({ book, library, origin, genre, reducedMotion, onClos
   // big, but never wider than the page: size by the longest word (Anybody at 122% runs ~0.8em a letter)
   const longestWord = Math.max(4, ...book.title.split(/\s+/).map((w) => w.length))
   const pagePad = Math.min(44, Math.max(22, geo.W * 0.085))
-  const titleSize = Math.max(24, Math.min(60, geo.W * 0.112, (geo.W - pagePad * 2) / (longestWord * 0.8)))
+  const titleSize = Math.max(24, Math.min(60, geo.W * 0.112, geo.H * 0.13, (geo.W - pagePad * 2) / (longestWord * 0.8)))
 
   const frontMatter = (
     <div className="fm">

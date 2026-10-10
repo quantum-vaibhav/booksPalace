@@ -18,6 +18,11 @@
   --shelf-h: clamp(170px, 38vh, 370px);
   --headroom: 104px;
   --gutter: clamp(16px, 3vw, 40px);
+  /* the notch and home indicator on phones */
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
   color-scheme: light;
@@ -130,7 +135,8 @@ button {
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: start;
   gap: 16px;
-  padding: clamp(14px, 2.4vh, 26px) var(--gutter);
+  padding: calc(clamp(14px, 2.4vh, 26px) + var(--safe-t)) max(var(--gutter), var(--safe-r)) clamp(14px, 2.4vh, 26px)
+    max(var(--gutter), var(--safe-l));
   color: var(--ink-text);
 }
 
@@ -265,7 +271,7 @@ button {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: calc(var(--shelf-h) + var(--plank-h) + var(--headroom));
+  height: calc(var(--shelf-h) + var(--plank-h) + var(--headroom) + var(--safe-b));
 }
 
 .plank {
@@ -273,7 +279,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  height: var(--plank-h);
+  height: calc(var(--plank-h) + var(--safe-b));
   background: linear-gradient(var(--slate) 0 7px, var(--black) 7px);
 }
 
@@ -301,6 +307,7 @@ button {
   height: 100%;
   width: max-content;
   padding-inline: 6vw;
+  padding-bottom: var(--safe-b);
 }
 
 /* each genre is a run of books between bookends; short runs get a minimum width so the scene has room to change */
@@ -1885,7 +1892,7 @@ button {
 
   .scene-word {
     top: max(calc(var(--horizon) * 0.26), 124px);
-    font-size: 19vw;
+    font-size: min(19vw, calc(var(--horizon) * 0.44));
   }
 
   .shelf-track {
@@ -1894,6 +1901,131 @@ button {
 
   .run {
     min-width: 62vw;
+  }
+}
+
+/* ---- touch ------------------------------------------------------------------------- */
+
+/* a tap leaves :hover stuck on touch screens; there the lift answers the press instead */
+@media (hover: none) {
+  .book:hover:not(:focus-visible),
+  .book--flat:hover:not(:focus-visible) {
+    transform: none;
+  }
+
+  .book:hover:not(:focus-visible) .slip {
+    opacity: 0;
+  }
+
+  .book:active,
+  .book:hover:active {
+    transform: translateY(calc(var(--shelf-h) * -0.04));
+    transition-duration: 120ms;
+  }
+
+  .book--flat:active,
+  .book--flat:hover:active {
+    transform: translateX(8px);
+  }
+}
+
+/* fingers need 44px to land on */
+@media (pointer: coarse) {
+  .genre-index button {
+    min-height: 44px;
+    padding-inline: 10px;
+  }
+
+  .run-tag-button,
+  .text-button,
+  .spread-close,
+  .ink-button {
+    min-height: 44px;
+  }
+
+  .text-button {
+    padding-inline: 6px;
+  }
+
+  .shelf-scroller {
+    scrollbar-width: none;
+  }
+
+  .shelf-scroller::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ---- a phone on its side --------------------------------------------------------------- */
+
+@media (max-height: 520px) and (orientation: landscape) {
+  :root {
+    --shelf-h: clamp(118px, 42vh, 200px);
+    --plank-h: 46px;
+    /* no hover slip to make room for on a phone; just enough for the press lift */
+    --headroom: 28px;
+  }
+
+  /* one row: wordmark, genres, tally */
+  .masthead {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    row-gap: 0;
+    padding-block: calc(8px + var(--safe-t)) 8px;
+  }
+
+  .genre-index {
+    grid-column: auto;
+    grid-row: auto;
+    margin-inline: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    mask-image: linear-gradient(90deg, transparent, #000 16px, #000 calc(100% - 40px), transparent);
+  }
+
+  .genre-index ol {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-inline: 8px 32px;
+  }
+
+  .genre-index button {
+    white-space: nowrap;
+  }
+
+  .tally {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tally p {
+    font-size: 14px;
+  }
+
+  .tally-reading {
+    display: none;
+  }
+
+  .scene-word {
+    top: 64px;
+    font-size: min(17.5vw, max(48px, calc((var(--horizon) - 64px) * 0.9)));
+  }
+
+  .shelf-track {
+    padding-inline: max(5vw, var(--safe-l)) max(5vw, var(--safe-r));
+  }
+
+  .run {
+    min-width: 46vw;
+  }
+
+  .spread-close {
+    top: 12px;
+    right: max(16px, var(--safe-r));
+  }
+
+  .drawer {
+    max-height: calc(100% - 24px);
   }
 }
 
